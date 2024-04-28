@@ -7,6 +7,6 @@ public class ScriptJugar : MonoBehaviour
 {
     public void Jugar()
     {
-        SceneManager.LoadScene("Trivia");
+        SceneManager.LoadScene("introduccion");
     }
 }
