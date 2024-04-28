@@ -1581,6 +1581,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4992295071736116984, guid: 8b867831fcc717543b3320d226e1123c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 85.62002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992295071736116984, guid: 8b867831fcc717543b3320d226e1123c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 42.809994
+      objectReference: {fileID: 0}
     - target: {fileID: 4992295071736116987, guid: 8b867831fcc717543b3320d226e1123c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 20
@@ -1664,7 +1672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5113483481500170176, guid: fcb84022c4623e24a8995b15fc5e201e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 131
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5113483481500170176, guid: fcb84022c4623e24a8995b15fc5e201e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
