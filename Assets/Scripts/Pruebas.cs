@@ -87,6 +87,7 @@ public class Pruebas : MonoBehaviour
         if(cantidadCorrectas>=10)
         {
             Debug.Log("Ganaste");
+            Win();
         }
     }
 
@@ -322,5 +323,10 @@ public class Pruebas : MonoBehaviour
         */
 
         SceneManager.LoadScene("GameOver");
+    }
+
+    public void Win()
+    {
+        SceneManager.LoadScene("Win");
     }
 }
