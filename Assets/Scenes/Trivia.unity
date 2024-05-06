@@ -1604,7 +1604,7 @@ PrefabInstance:
     - target: {fileID: 4992295070931443016, guid: 8b867831fcc717543b3320d226e1123c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3839375259209827731, guid: d51ec350261f48249b6afdb56bdb7903, type: 3}
+      objectReference: {fileID: -1323723456805878392, guid: d51ec350261f48249b6afdb56bdb7903, type: 3}
     - target: {fileID: 4992295070931443060, guid: 8b867831fcc717543b3320d226e1123c, type: 3}
       propertyPath: m_Name
       value: BotonComodin
@@ -1679,7 +1679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4992295070931443063, guid: 8b867831fcc717543b3320d226e1123c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -461
+      value: -425.04
       objectReference: {fileID: 0}
     - target: {fileID: 4992295070931443063, guid: 8b867831fcc717543b3320d226e1123c, type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -6992600051351599000
     second: comodin (2)_1
+  - first:
+      213: -1323723456805878392
+    second: comodin_0
+  - first:
+      213: 8084506082536650810
+    second: comodin_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: comodin (2)_0
+      name: comodin_0
       rect:
         serializedVersion: 2
         x: 1
@@ -112,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39500a4d473384530800000000000000
-      internalID: 3839375259209827731
+      spriteID: 885cb38878031ade0800000000000000
+      internalID: -1323723456805878392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: comodin (2)_1
+      name: comodin_1
       rect:
         serializedVersion: 2
         x: 1
@@ -133,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8684fca3d4b45fe90800000000000000
-      internalID: -6992600051351599000
+      spriteID: a38f412d27fe13070800000000000000
+      internalID: 8084506082536650810
       vertices: []
       indices: 
       edges: []
