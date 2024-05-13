@@ -1268,6 +1268,27 @@ MonoBehaviour:
     - 51 estados
     - 48 estados
     RespuestaCorrecta: 1
+  - Pregunta: "\xBFCu\xE1l es el pa\xEDs m\xE1s largo del mundo?"
+    Respuestas:
+    - Estados Unidos
+    - Argentina
+    - China
+    - Chile
+    RespuestaCorrecta: 4
+  - Pregunta: "\xBFCu\xE1l es el pa\xEDs m\xE1s peque\xF1o del mundo?"
+    Respuestas:
+    - Andorra
+    - Estado Vaticano
+    - Paraguay
+    - Corea del Sur
+    RespuestaCorrecta: 2
+  - Pregunta: "\xBFCuantas lunas tiene Marte?"
+    Respuestas:
+    - Andorra
+    - Estado Vaticano
+    - Paraguay
+    - Corea del Sur
+    RespuestaCorrecta: 2
   preguntasMedias:
   - Pregunta: "\xBFQu\xE9 tipo de animal marino es la ballena?"
     Respuestas:
