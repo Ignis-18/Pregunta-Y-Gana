@@ -13,6 +13,7 @@ public class Pruebas : MonoBehaviour
     public GameObject[] opciones;
     public GameObject botonComodin;
     public GameObject panelPregunta;
+    public GameObject indicadorBonus;
     
     public Dificultad _dificultad;
     public int preguntaActual;
@@ -59,6 +60,15 @@ public class Pruebas : MonoBehaviour
         else
         {
             bonus = false;
+        }
+
+        if(bonus)
+        {
+            indicadorBonus.SetActive(true);
+        }
+        else
+        {
+            indicadorBonus.SetActive(false);
         }
     }
 
