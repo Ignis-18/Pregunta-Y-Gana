@@ -8,18 +8,9 @@ public class ScriptRespuestas : MonoBehaviour
    public Pruebas pruebas;
    public AudioSource correcta, incorrecta;
    
+   
    public void Respuesta()
-   {
-        if(pruebas.contadorPreguntas>1 && (pruebas.contadorPreguntas-1)%3==0)
-        {
-            pruebas.bonus = true;
-        }
-
-        else
-        {
-            pruebas.bonus = false;
-        }
-        
+   {        
         if(esCorrecta)
         {
             correcta.Stop();

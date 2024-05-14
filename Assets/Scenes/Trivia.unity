@@ -1551,6 +1551,62 @@ MonoBehaviour:
     - Talcahuano
     - Al final de la hoja
     RespuestaCorrecta: 3
+  - Pregunta: "\xBFCual es la capital de Bulgaria?"
+    Respuestas:
+    - Sofia
+    - Bucarest
+    - "Bak\xFA"
+    - Budapest
+    RespuestaCorrecta: 1
+  - Pregunta: "\xBFQui\xE9n es el autor de The Witcher?"
+    Respuestas:
+    - "Ryszard Kapu\u015Bci\u0144ski"
+    - Andrzej Sapkowsk
+    - Ignacio Domeyko
+    - Olga Tokarczuk
+    RespuestaCorrecta: 2
+  - Pregunta: "\xBFCu\xE1ntos sistemas solares hay en la V\xEDa L\xE1ctea?"
+    Respuestas:
+    - 3702
+    - 3805
+    - 3916
+    - 3604
+    RespuestaCorrecta: 3
+  - Pregunta: "\xBFCu\xE1l es el ave terrestre m\xE1s grande?"
+    Respuestas:
+    - Kiwi
+    - Casuari
+    - Picozapato
+    - Avestruz
+    RespuestaCorrecta: 4
+  - Pregunta: "\xBFCu\xE1l es el tipo de ara\xF1a m\xE1s grande?"
+    Respuestas:
+    - Theraphosa Blondi
+    - Euathlus Condorito
+    - Poecilotheria Metallica
+    - Grammostola Rosea
+    RespuestaCorrecta: 1
+  - Pregunta: "\xBFCu\xE1l es el reptil m\xE1s grande?"
+    Respuestas:
+    - Geco
+    - Cocodrilo de agua salada
+    - Anaconda
+    - Iguana
+    RespuestaCorrecta: 2
+  - Pregunta: "\xBFQui\xE9n fue el primer emperador romano?"
+    Respuestas:
+    - Julio Cesar
+    - Tiberio
+    - Augusto
+    - "Cal\xEDgula"
+    RespuestaCorrecta: 3
+  - Pregunta: "\xBFCuando se escribi\xF3 la Divina Comedia?"
+    Respuestas:
+    - 1231
+    - 1213
+    - 1123
+    - 1321
+    RespuestaCorrecta: 4
   opciones:
   - {fileID: 1806152510}
   - {fileID: 69280422}

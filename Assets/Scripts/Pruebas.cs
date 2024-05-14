@@ -49,6 +49,19 @@ public class Pruebas : MonoBehaviour
         vidas.text = "Oportunidades: "+oportunidades;
     }
 
+    private void Update()
+    {
+        if(contadorPreguntas>1 && (contadorPreguntas-1)%3==0)
+        {
+            bonus = true;
+        }
+
+        else
+        {
+            bonus = false;
+        }
+    }
+
     public void correcto() //Siguiente preguntas en caso de respuesta correcta
     {
         Debug.Log(contadorPreguntas);
