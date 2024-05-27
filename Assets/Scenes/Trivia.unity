@@ -1544,7 +1544,7 @@ MonoBehaviour:
     - 9
     - 10
     RespuestaCorrecta: 4
-  - Pregunta: "\xBFA que sinfon\xEDa de Beethoven pertence el Himno de la Alegr\xEDa?"
+  - Pregunta: "\xBFA que sinfon\xEDa de Beethoven pertenece el Himno de la Alegr\xEDa?"
     Respuestas:
     - "5\xB0 sinfon\xEDa"
     - "8\xB0 sinfon\xEDa"
