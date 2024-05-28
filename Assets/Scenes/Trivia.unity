@@ -1842,7 +1842,7 @@ MonoBehaviour:
   - Pregunta: "\xBFCu\xE1l es el ave terrestre m\xE1s grande?"
     Respuestas:
     - Kiwi
-    - Casuari
+    - Casuario
     - Picozapato
     - Avestruz
     RespuestaCorrecta: 4
