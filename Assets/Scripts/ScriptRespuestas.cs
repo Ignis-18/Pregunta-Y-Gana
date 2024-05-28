@@ -6,28 +6,32 @@ public class ScriptRespuestas : MonoBehaviour
 {
    public bool esCorrecta = false;
    public Pruebas pruebas;
-   public AudioSource correcta, incorrecta;
+   public AudioSource correcta, incorrecta, comodin;
    
    
    public void Respuesta()
    {        
         if(esCorrecta)
         {
+            comodin.Stop();
             correcta.Stop();
             incorrecta.Stop();
-            Debug.Log("Correcta");
+            Debug.Log("Correcta");            
+            correcta.Play();
             if(pruebas.bonus)
             {
+                correcta.Stop();
+                comodin.Play();
                 pruebas.usosComodin++;
                 print("sume bonus");
             }
-            correcta.Play();
             pruebas.correcto();
             print("respondi correcto");
                        
         }
         else
         {
+            comodin.Stop();
             correcta.Stop();
             incorrecta.Stop();
             Debug.Log("Incorrecta");
