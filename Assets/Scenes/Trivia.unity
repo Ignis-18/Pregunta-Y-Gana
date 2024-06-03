@@ -1394,7 +1394,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.04, y: 1.81}
+  m_Size: {x: 5, y: 2.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1634,7 +1634,7 @@ MonoBehaviour:
     - Indonesia
     - India
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFD\xF3nde se encuentra la Sagrada Familia?"
+  - Pregunta: "\xBFD\xF3nde se encuentra la Catedral de la Sagrada Familia?"
     Respuestas:
     - Barcelona
     - Estado Vaticano
@@ -1811,13 +1811,13 @@ MonoBehaviour:
     - 860
     - 1511
     RespuestaCorrecta: 4
-  - Pregunta: "\xBFD\xF3nde se firm\xF3 el primer acta de independencia?"
+  - Pregunta: "\xBFD\xF3nde se firm\xF3 el primer acta de independencia de Chile?"
     Respuestas:
     - Santiago
     - Talca
     - Talcahuano
     - Al final de la hoja
-    RespuestaCorrecta: 3
+    RespuestaCorrecta: 2
   - Pregunta: "\xBFCual es la capital de Bulgaria?"
     Respuestas:
     - Sofia
@@ -1825,7 +1825,7 @@ MonoBehaviour:
     - "Bak\xFA"
     - Budapest
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFQui\xE9n es el autor de The Witcher?"
+  - Pregunta: "\xBFQui\xE9n es el autor de los libros de The Witcher?"
     Respuestas:
     - "Ryszard Kapu\u015Bci\u0144ski"
     - Andrzej Sapkowsk
@@ -2125,6 +2125,7 @@ GameObject:
   - component: {fileID: 1662019107}
   - component: {fileID: 1662019109}
   - component: {fileID: 1662019108}
+  - component: {fileID: 1662019110}
   m_Layer: 5
   m_Name: Indicador_Bonus
   m_TagString: Untagged
@@ -2189,6 +2190,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662019106}
   m_CullTransparentMesh: 1
+--- !u!95 &1662019110
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662019106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 155668598d92fa747b0f72277b2d75ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1719364294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2163279308477504550, guid: bce38b3b1ff9cae4db130dcef0a095e2, type: 3}
