@@ -46,8 +46,8 @@ public class Pruebas : MonoBehaviour
         
         generarPreguntas();
 
-        puntuacion.text = "Puntos: "+cantidadCorrectas;
-        vidas.text = "Oportunidades: "+oportunidades;
+        puntuacion.text = "Puntos: \n"+cantidadCorrectas;
+        vidas.text = "Vidas: \n"+oportunidades;
     }
 
     private void Update()
