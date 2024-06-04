@@ -105,7 +105,7 @@ public class Pruebas : MonoBehaviour
         }
         contadorPreguntas++;
 
-        puntuacion.text = "Puntos: "+cantidadCorrectas;
+        puntuacion.text = "Puntos: \n"+cantidadCorrectas;
 
         if(cantidadCorrectas>=10)
         {
@@ -158,7 +158,7 @@ public class Pruebas : MonoBehaviour
         }
         contadorPreguntas++;
 
-        vidas.text = "Oportunidades: "+oportunidades;
+        vidas.text = "Vidas: \n"+oportunidades;
 
         if (oportunidades<=0)
         {
