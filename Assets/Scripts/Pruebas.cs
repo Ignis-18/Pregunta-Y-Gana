@@ -110,7 +110,7 @@ public class Pruebas : MonoBehaviour
         if(cantidadCorrectas>=10)
         {
             Debug.Log("Ganaste");
-            Win();
+            //Win();
         }
     }
 
@@ -163,7 +163,7 @@ public class Pruebas : MonoBehaviour
         if (oportunidades<=0)
         {
            Debug.Log("Fin del juego");
-           GameOver();
+           //GameOver();
         }
 
         
@@ -351,5 +351,33 @@ public class Pruebas : MonoBehaviour
     public void Win()
     {
         SceneManager.LoadScene("Win");
+    }
+
+    IEnumerator CargarEscena()
+    { 
+        AsyncOperation opWin = SceneManager.LoadSceneAsync("Win");
+        AsyncOperation opLose = SceneManager.LoadSceneAsync("GameOver");
+        opWin.allowSceneActivation = false;
+        opLose.allowSceneActivation = false;
+        
+        while(!opWin.isDone)
+        {
+            yield return null;
+        }
+
+        while(!opLose.isDone)
+        {
+            yield return null;
+        }
+        
+        if(oportunidades<=0)
+        {
+            opLose.allowSceneActivation = true;
+        }
+
+        if(cantidadCorrectas>=10)
+        {
+            opWin.allowSceneActivation = true;
+        }
     }
 }

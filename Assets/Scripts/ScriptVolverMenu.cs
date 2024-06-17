@@ -8,6 +8,6 @@ public class ScriptVolverMenu : MonoBehaviour
     // Start is called before the first frame update
     public void VolverMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Menu"));
     }
 }

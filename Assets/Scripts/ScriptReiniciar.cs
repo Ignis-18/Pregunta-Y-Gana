@@ -7,6 +7,6 @@ public class ScriptReiniciar : MonoBehaviour
 {
     public void Reiniciar()
     {
-        SceneManager.LoadScene("Trivia");
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Trivia"));
     }
 }

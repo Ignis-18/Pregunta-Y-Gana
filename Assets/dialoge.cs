@@ -9,16 +9,18 @@ public class dialoge : MonoBehaviour
     [TextArea(3, 10)]
     public string[] dialogueLines;
     public TextMeshProUGUI dialogueText; // Referencia al componente TextMeshPro
-    private List<string> currentPages; // Lista para guardar las páginas del diálogo actual
-    private int currentPageIndex; // Índice de la página actual
+    private List<string> currentPages; // Lista para guardar las pï¿½ginas del diï¿½logo actual
+    private int currentPageIndex; // ï¿½ndice de la pï¿½gina actual
     private int currentLineIndex = 0;
     private bool displayingDialogue = false;
+    public bool activarEscena = false;
 
-    public string nextSceneName; // Nombre de la próxima escena a cargar
+    public string nextSceneName; // Nombre de la prï¿½xima escena a cargar
 
     void Start()
     {
         currentPages = new List<string>();
+        StartCoroutine(CargarEscena());
     }
 
     void OnMouseEnter()
@@ -53,7 +55,7 @@ public class dialoge : MonoBehaviour
                 {
                     displayingDialogue = false;
                     dialogueText.text = "";
-                    SceneManager.LoadScene(nextSceneName); // Cargar la próxima escena
+                    activarEscena = true;
                 }
             }
         }
@@ -63,7 +65,7 @@ public class dialoge : MonoBehaviour
     {
         currentPages.Clear();
         currentPageIndex = 0;
-        const int maxCharacters = 200; // Máximo de caracteres por página
+        const int maxCharacters = 200; // Mï¿½ximo de caracteres por pï¿½gina
 
         for (int i = 0; i < dialogue.Length; i += maxCharacters)
         {
@@ -83,5 +85,22 @@ public class dialoge : MonoBehaviour
     {
         displayingDialogue = false;
         dialogueText.text = "";
+    }
+
+    IEnumerator CargarEscena()
+    {        
+        AsyncOperation op = SceneManager.LoadSceneAsync("Trivia");
+        op.allowSceneActivation = false;
+
+        while(!op.isDone)
+        {
+            Debug.Log(op.progress);
+            yield return null;
+        }
+        
+        if(op.progress>=0.9f && currentPageIndex>=dialogueLines.Length)
+        {
+            op.allowSceneActivation = true;
+        }
     }
 }
