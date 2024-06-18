@@ -14,6 +14,7 @@ public class Pruebas : MonoBehaviour
     public GameObject botonComodin;
     public GameObject panelPregunta;
     public GameObject indicadorBonus;
+    public SceneLoaderScript LoaderWin, LoaderLose;
     
     public Dificultad _dificultad;
     public int preguntaActual;
@@ -48,8 +49,6 @@ public class Pruebas : MonoBehaviour
 
         puntuacion.text = "Puntos: \n"+cantidadCorrectas;
         vidas.text = "Vidas: \n"+oportunidades;
-
-        StartCoroutine(CargarEscena());
     }
 
     private void Update()
@@ -71,6 +70,16 @@ public class Pruebas : MonoBehaviour
         else
         {
             indicadorBonus.SetActive(false);
+        }
+
+        if(cantidadCorrectas >= 10)
+        {
+            LoaderWin.activarEscena = true;
+        }
+
+        if(oportunidades <= 0)
+        {
+            LoaderLose.activarEscena = true;
         }
     }
 
@@ -165,7 +174,7 @@ public class Pruebas : MonoBehaviour
         if (oportunidades<=0)
         {
            Debug.Log("Fin del juego");
-           //GameOver();
+           GameOver();
         }
 
         
@@ -353,31 +362,5 @@ public class Pruebas : MonoBehaviour
     public void Win()
     {
         SceneManager.LoadScene("Win");
-    }
-
-    IEnumerator CargarEscena()
-    { 
-        AsyncOperation opWin = SceneManager.LoadSceneAsync("Win");
-        AsyncOperation opLose = SceneManager.LoadSceneAsync("GameOver");
-        opWin.allowSceneActivation = false;
-        opLose.allowSceneActivation = false;
-        
-        while(!opWin.isDone)
-        {
-            yield return null;
-            if (cantidadCorrectas >= 10)
-            {
-                opWin.allowSceneActivation = true;
-            }
-        }
-
-        while(!opLose.isDone)
-        {
-            yield return null;
-            if (oportunidades <= 0)
-            {
-                opLose.allowSceneActivation = true;
-            }
-        }
     }
 }

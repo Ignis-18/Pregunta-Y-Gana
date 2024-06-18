@@ -608,10 +608,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1636176699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c6ad69bfc7e8142b95e5e9fec7b2e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 628e63a3c7dde3f4a92d6cd3e2e157b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   barra: {fileID: 1491990142}
+  escenaACargar: {fileID: 102900000, guid: d467dfdb6749db345869aa9713349551, type: 3}
 --- !u!4 &1636176701
 Transform:
   m_ObjectHideFlags: 0

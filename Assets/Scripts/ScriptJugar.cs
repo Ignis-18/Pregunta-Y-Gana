@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ScriptJugar : MonoBehaviour
 {
+    public SceneLoaderScript SceneLoader;
+    
     public void Jugar()
     {
-        SceneManager.LoadScene("introduccion");
+        SceneLoader.activarEscena = true;
     }
 }

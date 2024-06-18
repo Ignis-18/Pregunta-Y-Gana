@@ -99,7 +99,7 @@ public class dialoge : MonoBehaviour
 
         while(!op.isDone)
         {
-            Debug.Log(op.progress);
+            //Debug.Log(op.progress);
             yield return null;
             if (activarEscena)
             {
