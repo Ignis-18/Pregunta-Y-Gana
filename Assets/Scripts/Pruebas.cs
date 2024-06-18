@@ -48,6 +48,8 @@ public class Pruebas : MonoBehaviour
 
         puntuacion.text = "Puntos: \n"+cantidadCorrectas;
         vidas.text = "Vidas: \n"+oportunidades;
+
+        StartCoroutine(CargarEscena());
     }
 
     private void Update()
@@ -363,21 +365,19 @@ public class Pruebas : MonoBehaviour
         while(!opWin.isDone)
         {
             yield return null;
+            if (cantidadCorrectas >= 10)
+            {
+                opWin.allowSceneActivation = true;
+            }
         }
 
         while(!opLose.isDone)
         {
             yield return null;
-        }
-        
-        if(oportunidades<=0)
-        {
-            opLose.allowSceneActivation = true;
-        }
-
-        if(cantidadCorrectas>=10)
-        {
-            opWin.allowSceneActivation = true;
+            if (oportunidades <= 0)
+            {
+                opLose.allowSceneActivation = true;
+            }
         }
     }
 }

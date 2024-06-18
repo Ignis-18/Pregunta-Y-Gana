@@ -10,8 +10,8 @@ public class dialoge : MonoBehaviour
     public string[] dialogueLines;
     public TextMeshProUGUI dialogueText; // Referencia al componente TextMeshPro
     private List<string> currentPages; // Lista para guardar las p�ginas del di�logo actual
-    private int currentPageIndex; // �ndice de la p�gina actual
-    private int currentLineIndex = 0;
+    public int currentPageIndex; // �ndice de la p�gina actual
+    public int currentLineIndex = 0;
     private bool displayingDialogue = false;
     public bool activarEscena = false;
 
@@ -55,8 +55,13 @@ public class dialoge : MonoBehaviour
                 {
                     displayingDialogue = false;
                     dialogueText.text = "";
-                    activarEscena = true;
+                    
                 }
+            }
+
+            if (currentPageIndex == 1)
+            {
+                activarEscena = true;
             }
         }
     }
@@ -96,11 +101,10 @@ public class dialoge : MonoBehaviour
         {
             Debug.Log(op.progress);
             yield return null;
-        }
-        
-        if(op.progress>=0.9f && currentPageIndex>=dialogueLines.Length)
-        {
-            op.allowSceneActivation = true;
-        }
+            if (activarEscena)
+            {
+                op.allowSceneActivation = true;
+            }
+        }        
     }
 }
