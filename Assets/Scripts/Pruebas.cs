@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public enum Dificultad{FACIL, INTERMEDIO, DIFICIL}
 public class Pruebas : MonoBehaviour
 {
+    public GameObject info;
+    public DoNotDestroyOnLoad detecta;    
     public List<Preguntas> preguntasFaciles;
     public List<Preguntas> preguntasMedias;
     public List<Preguntas> preguntasDificiles;
@@ -14,7 +16,7 @@ public class Pruebas : MonoBehaviour
     public GameObject botonComodin;
     public GameObject panelPregunta;
     public GameObject indicadorBonus;
-    public SceneLoaderScript LoaderWin, LoaderLose;
+    public SceneLoaderScript Loader;
     
     public Dificultad _dificultad;
     public int preguntaActual;
@@ -34,11 +36,17 @@ public class Pruebas : MonoBehaviour
 
     private void Start() //Iniciar primera pregunta
     {
+        info = GameObject.FindWithTag("Manager");
+        detecta = info.GetComponent<DoNotDestroyOnLoad>();
+        
         contadorDificultad = 1;
         oportunidades = 3;
         cantidadCorrectas = 0;
         contadorPreguntas = 1;
         usosComodin = 0;
+
+        detecta.win = false;
+        detecta.lose = false;
 
         opciones[0].SetActive(true);
         opciones[1].SetActive(true);
@@ -72,14 +80,9 @@ public class Pruebas : MonoBehaviour
             indicadorBonus.SetActive(false);
         }
 
-        if(cantidadCorrectas >= 10)
+        if(cantidadCorrectas >= 10 || oportunidades <= 0)
         {
-            LoaderWin.activarEscena = true;
-        }
-
-        if(oportunidades <= 0)
-        {
-            LoaderLose.activarEscena = true;
+            Loader.activarEscena = true;
         }
     }
 
@@ -174,7 +177,7 @@ public class Pruebas : MonoBehaviour
         if (oportunidades<=0)
         {
            Debug.Log("Fin del juego");
-           GameOver();
+           //GameOver();
         }
 
         

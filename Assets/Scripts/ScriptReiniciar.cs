@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ScriptReiniciar : MonoBehaviour
 {
+    public SceneLoaderScript sceneLoader;
+    
     public void Reiniciar()
     {
-        SceneManager.LoadScene("Trivia");
+        sceneLoader.activarEscena = true;
     }
 }
