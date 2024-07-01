@@ -1984,7 +1984,7 @@ MonoBehaviour:
   info: {fileID: 0}
   detecta: {fileID: 0}
   preguntasFaciles:
-  - Pregunta: "\xBFCual es el oceano m\xE1s grande?"
+  - Pregunta: "\xBFCu\xE1l es el oceano m\xE1s grande?"
     Respuestas:
     - "Oc\xE9ano Atl\xE1ntico"
     - "Oc\xE9ano Pac\xEDfico"
@@ -2026,7 +2026,7 @@ MonoBehaviour:
     - "2 a\xF1os"
     - "1 a\xF1o"
     RespuestaCorrecta: 2
-  - Pregunta: "\xBFCual es el tercer planeta del sistema solar?"
+  - Pregunta: "\xBFCu\xE1l es el tercer planeta del sistema solar?"
     Respuestas:
     - Marte
     - Tierra
@@ -2082,35 +2082,35 @@ MonoBehaviour:
     - Paraguay
     - Corea del Sur
     RespuestaCorrecta: 2
-  - Pregunta: "\xBFCuantas lunas tiene Marte?"
+  - Pregunta: "\xBFCu\xE1ntas lunas tiene Marte?"
     Respuestas:
     - 2
     - 1
     - 3
     - 4
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFDonde est\xE1 la Gran Esfinge?"
+  - Pregunta: "\xBFD\xF3nde est\xE1 la Gran Esfinge?"
     Respuestas:
     - Giza
     - Cairo
     - Bagdad
     - Mali
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFEn donde estaban los Jardines Colgantes?"
+  - Pregunta: "\xBFEn d\xF3nde estaban los Jardines Colgantes?"
     Respuestas:
     - Grecia
     - Mesopotomia
     - Sumeria
     - Babilonia
     RespuestaCorrecta: 4
-  - Pregunta: "\xBFQuien es el dios griego del rayo?"
+  - Pregunta: "\xBFQui\xE9n es el dios griego del rayo?"
     Respuestas:
     - "J\xFApiter"
     - Poseidon
     - Zeus
     - Thor
     RespuestaCorrecta: 3
-  - Pregunta: "\xBFQu\xE9 fruta le dio Eva a Ad\xE1n"
+  - Pregunta: "\xBFQu\xE9 fruta le dio Eva a Ad\xE1n?"
     Respuestas:
     - "Pi\xF1a"
     - Granada
@@ -2181,14 +2181,14 @@ MonoBehaviour:
     - Multiplicando
     - Total
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFCual es la estrella m\xE1s cercana al Sistema Solar?"
+  - Pregunta: "\xBFCu\xE1l es la estrella m\xE1s cercana al Sistema Solar?"
     Respuestas:
     - "Pr\xF3xima Centauri"
     - Sirius
     - Polaris
     - Regulus
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFEn cuantas notas se divide la escala m\xFAsical?"
+  - Pregunta: "\xBFEn cu\xE1ntas notas se divide la escala m\xFAsical?"
     Respuestas:
     - 8 notas
     - 16 notas
@@ -2202,7 +2202,7 @@ MonoBehaviour:
     - Galaxia del Cigarro
     - Galaxia de Centauro
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFCual de los siguientes es hijo de Zeus?"
+  - Pregunta: "\xBFCu\xE1l de los siguientes es hijo de Zeus?"
     Respuestas:
     - Teseo
     - Herakles
@@ -2237,7 +2237,7 @@ MonoBehaviour:
     - C. S. Lewis
     - J. K. Rowling
     RespuestaCorrecta: 2
-  - Pregunta: "\xBFCuantas pel\xEDculas hay en la franquicia Star Wars?"
+  - Pregunta: "\xBFCu\xE1ntas pel\xEDculas hay en la franquicia Star Wars?"
     Respuestas:
     - 3
     - 6
@@ -2258,7 +2258,7 @@ MonoBehaviour:
     - Espartanos y atenienses
     - Itacos y troyanos
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFCuanto mide la Gran Piramide de Giza?"
+  - Pregunta: "\xBFCu\xE1nto mide la Gran Piramide de Giza?"
     Respuestas:
     - 148 metros
     - 144 metros
@@ -2330,14 +2330,14 @@ MonoBehaviour:
     - 14 dioses
     - 8 dioses
     RespuestaCorrecta: 2
-  - Pregunta: "\xBFEn que a\xF1o se public\xF3 Don Quijote de La Mancha?"
+  - Pregunta: "\xBFEn qu\xE9 a\xF1o se public\xF3 Don Quijote de La Mancha?"
     Respuestas:
     - 1602
     - 1605
     - 1608
     - 1610
     RespuestaCorrecta: 2
-  - Pregunta: "\xBFEn que a\xF1o se pint\xF3 La creaci\xF3n de Ad\xE1n?"
+  - Pregunta: "\xBFEn qu\xE9 a\xF1o se pint\xF3 La creaci\xF3n de Ad\xE1n?"
     Respuestas:
     - 0
     - 5500 AC
@@ -2351,7 +2351,7 @@ MonoBehaviour:
     - Talcahuano
     - Al final de la hoja
     RespuestaCorrecta: 2
-  - Pregunta: "\xBFCual es la capital de Bulgaria?"
+  - Pregunta: "\xBFCu\xE1l es la capital de Bulgaria?"
     Respuestas:
     - Sofia
     - Bucarest
@@ -2400,7 +2400,7 @@ MonoBehaviour:
     - Augusto
     - "Cal\xEDgula"
     RespuestaCorrecta: 3
-  - Pregunta: "\xBFCuando se escribi\xF3 la Divina Comedia?"
+  - Pregunta: "\xBFCu\xE1ndo se escribi\xF3 la Divina Comedia?"
     Respuestas:
     - 1231
     - 1213
