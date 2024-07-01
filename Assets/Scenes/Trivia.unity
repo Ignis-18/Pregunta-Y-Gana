@@ -2091,7 +2091,7 @@ MonoBehaviour:
     RespuestaCorrecta: 1
   - Pregunta: "\xBFDonde est\xE1 la Gran Esfinge?"
     Respuestas:
-    - Guiza
+    - Giza
     - Cairo
     - Bagdad
     - Mali
@@ -2258,7 +2258,7 @@ MonoBehaviour:
     - Espartanos y atenienses
     - Itacos y troyanos
     RespuestaCorrecta: 1
-  - Pregunta: "\xBFCuanto mide la Gran Piramide de Guiza?"
+  - Pregunta: "\xBFCuanto mide la Gran Piramide de Giza?"
     Respuestas:
     - 148 metros
     - 144 metros
