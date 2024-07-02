@@ -90,7 +90,7 @@ public class Pruebas : MonoBehaviour
 
         else
         {
-            if(cantidadCorrectas >= 60 || oportunidades <= 0)
+            if(preguntasDificiles.Count <= 0 || oportunidades <= 0)
             {
                 Loader.activarEscena = true;
             }
@@ -138,7 +138,7 @@ public class Pruebas : MonoBehaviour
             //Win();
         }
 
-        if(cantidadCorrectas>=60 && detecta.infinite == true)
+        if(preguntasDificiles.Count <= 0 && detecta.infinite == true)
         {
             Debug.Log("Ganaste");
         }

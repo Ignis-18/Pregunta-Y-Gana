@@ -36,7 +36,7 @@ public class DoNotDestroyOnLoad : MonoBehaviour
 
         else
         {
-            if (pruebas.cantidadCorrectas>=60)
+            if (pruebas.preguntasDificiles.Count <= 0)
             {
                 win = true;
             }
