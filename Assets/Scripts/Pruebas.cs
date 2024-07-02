@@ -61,7 +61,7 @@ public class Pruebas : MonoBehaviour
 
     private void Update()
     {
-        if(contadorPreguntas>1 && (contadorPreguntas-1)%3==0)
+        if(contadorPreguntas>1 && (contadorPreguntas-1)%3==0 && detecta.infinite == false)
         {
             bonus = true;
         }
@@ -80,9 +80,20 @@ public class Pruebas : MonoBehaviour
             indicadorBonus.SetActive(false);
         }
 
-        if(cantidadCorrectas >= 10 || oportunidades <= 0)
+        if (detecta.infinite == false)
         {
-            Loader.activarEscena = true;
+            if(cantidadCorrectas >= 10 || oportunidades <= 0)
+            {
+                Loader.activarEscena = true;
+            }
+        }
+
+        else
+        {
+            if(cantidadCorrectas >= 60 || oportunidades <= 0)
+            {
+                Loader.activarEscena = true;
+            }
         }
     }
 
@@ -121,10 +132,15 @@ public class Pruebas : MonoBehaviour
 
         puntuacion.text = "Puntos: \n"+cantidadCorrectas;
 
-        if(cantidadCorrectas>=10)
+        if(cantidadCorrectas>=10 && detecta.infinite == false)
         {
             Debug.Log("Ganaste");
             //Win();
+        }
+
+        if(cantidadCorrectas>=60 && detecta.infinite == true)
+        {
+            Debug.Log("Ganaste");
         }
     }
 
@@ -240,9 +256,19 @@ public class Pruebas : MonoBehaviour
 
     public void AsignarDificultad() //Asignar valores de dificultad
     {
-        if(contadorDificultad <= 3) _dificultad = Dificultad.FACIL;
-        else if(contadorDificultad <= 6) _dificultad = Dificultad.INTERMEDIO;
-        else _dificultad = Dificultad.DIFICIL;
+        if (detecta.infinite == false)
+        {
+            if(contadorDificultad <= 3) _dificultad = Dificultad.FACIL;
+            else if(contadorDificultad <= 6) _dificultad = Dificultad.INTERMEDIO;
+            else _dificultad = Dificultad.DIFICIL;
+        }
+
+        else
+        {
+            if(preguntasFaciles.Count > 0) _dificultad = Dificultad.FACIL;
+            else if(preguntasFaciles.Count <= 0 && preguntasMedias.Count > 0) _dificultad = Dificultad.INTERMEDIO;
+            else _dificultad = Dificultad.DIFICIL;
+        }
     }
 
     void marcarRespuestas() //Determinar respuesta correcta
@@ -292,7 +318,7 @@ public class Pruebas : MonoBehaviour
 
     public void comodin() //Funciones del comodin
     {
-        if (_dificultad == Dificultad.FACIL && usosComodin>0)
+        if (_dificultad == Dificultad.FACIL && usosComodin>0 && detecta.infinite == false)
         {
             for (int i = 0; i<opciones.Length; i++)
             {
@@ -311,7 +337,7 @@ public class Pruebas : MonoBehaviour
             usosComodin--;
         }
 
-        else if (_dificultad == Dificultad.INTERMEDIO && usosComodin>0)
+        else if (_dificultad == Dificultad.INTERMEDIO && usosComodin>0 && detecta.infinite == false)
         {
             for (int i = 0; i<opciones.Length; i++)
             {
@@ -330,7 +356,7 @@ public class Pruebas : MonoBehaviour
             usosComodin--;
         }
 
-        else if (_dificultad == Dificultad.DIFICIL && usosComodin>0)
+        else if (_dificultad == Dificultad.DIFICIL && usosComodin>0 && detecta.infinite == false)
         {
             for (int i = 0; i<opciones.Length; i++)
             {

@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class ScriptJugar : MonoBehaviour
+public class ScriptInfinito : MonoBehaviour
 {
+    
     public SceneLoaderScript SceneLoader;
     GameObject detector;
     DoNotDestroyOnLoad valorACambiar;
-    
-    public void Jugar()
+    // Start is called before the first frame update
+    public void cambiar()
     {
         detector = GameObject.FindWithTag("Manager");
         valorACambiar = detector.GetComponent<DoNotDestroyOnLoad>();
-        
-        valorACambiar.infinite = false;
+        valorACambiar.infinite = true;
         SceneLoader.activarEscena = true;
     }
 }

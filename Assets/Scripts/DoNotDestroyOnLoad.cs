@@ -8,27 +8,43 @@ public class DoNotDestroyOnLoad : MonoBehaviour
     Pruebas pruebas;
     public bool win = false;
     public bool lose = false;
+    public bool infinite = false;
     
     // Start is called before the first frame update
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
     }
-
     // Update is called once per frame
     void Update()
     {
         manager = GameObject.FindWithTag("GameController");
         pruebas = manager.GetComponent<Pruebas>();
 
-        if (pruebas.cantidadCorrectas>=10)
+        if (!infinite)
         {
-            win = true;
+            if (pruebas.cantidadCorrectas>=10)
+            {
+                win = true;
+            }
+
+            if (pruebas.oportunidades<=0)
+            {
+                lose = true;
+            }
         }
 
-        if (pruebas.oportunidades<=0)
+        else
         {
-            lose = true;
+            if (pruebas.cantidadCorrectas>=60)
+            {
+                win = true;
+            }
+
+            if (pruebas.oportunidades<=0)
+            {
+                lose = true;
+            }
         }
     }
 }
