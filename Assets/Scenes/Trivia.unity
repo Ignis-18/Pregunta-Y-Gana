@@ -1579,6 +1579,8 @@ MonoBehaviour:
     - "Oc\xE9ano \xCDndico"
     - "Oc\xE9ano \xC1rtico"
     RespuestaCorrecta: 2
+    tieneMedia: 1
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el pa\xEDs m\xE1s grande del mundo?"
     Respuestas:
     - Estados Unidos
@@ -1586,6 +1588,8 @@ MonoBehaviour:
     - Rusia
     - Brasil
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFEn qu\xE9 a\xF1o comenz\xF3 la II Guerra Mundial?"
     Respuestas:
     - 1939
@@ -1593,6 +1597,8 @@ MonoBehaviour:
     - 1940
     - 1935
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQu\xE9 pa\xEDs tiene forma de bota?"
     Respuestas:
     - Italia
@@ -1600,6 +1606,8 @@ MonoBehaviour:
     - Indonesia
     - Nueva Zelanda
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el r\xEDo m\xE1s largo del mundo?"
     Respuestas:
     - El Amazonas
@@ -1607,6 +1615,8 @@ MonoBehaviour:
     - "El rio Paran\xE1"
     - El Nilo
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ntos a\xF1os dur\xF3 la primera guerra mundial?"
     Respuestas:
     - "4 a\xF1os"
@@ -1614,6 +1624,8 @@ MonoBehaviour:
     - "2 a\xF1os"
     - "1 a\xF1o"
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCual es el tercer planeta del sistema solar?"
     Respuestas:
     - Marte
@@ -1621,6 +1633,8 @@ MonoBehaviour:
     - Neptuno
     - "J\xFApiter"
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFC\xF3mo se llama este juego?"
     Respuestas:
     - Pregunta y Gana
@@ -1628,6 +1642,8 @@ MonoBehaviour:
     - Acierta y Gana
     - Piensa y Gana
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFEn qu\xE9 continente est\xE1 Ecuador?"
     Respuestas:
     - "Am\xE9rica del Norte"
@@ -1635,6 +1651,8 @@ MonoBehaviour:
     - "Am\xE9rica del Sur"
     - "\xC1frica"
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9n lider\xF3 a Alemania en la segunda guerra mundial?"
     Respuestas:
     - Adolf Hitler
@@ -1642,6 +1660,8 @@ MonoBehaviour:
     - Adolf Wilhelm
     - Alfred Andresch
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQu\xE9 animal se considera rey de la selva?"
     Respuestas:
     - Tigre
@@ -1649,6 +1669,8 @@ MonoBehaviour:
     - Leopardo
     - "Le\xF3n"
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ntos estados tiene Estados Unidos?"
     Respuestas:
     - 50 estados
@@ -1656,6 +1678,8 @@ MonoBehaviour:
     - 51 estados
     - 48 estados
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el pa\xEDs m\xE1s largo del mundo?"
     Respuestas:
     - Estados Unidos
@@ -1663,6 +1687,8 @@ MonoBehaviour:
     - China
     - Chile
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el pa\xEDs m\xE1s peque\xF1o del mundo?"
     Respuestas:
     - Andorra
@@ -1670,6 +1696,8 @@ MonoBehaviour:
     - Paraguay
     - Corea del Sur
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCuantas lunas tiene Marte?"
     Respuestas:
     - 2
@@ -1677,6 +1705,8 @@ MonoBehaviour:
     - 3
     - 4
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFDonde est\xE1 la Gran Esfinge?"
     Respuestas:
     - Guiza
@@ -1684,6 +1714,8 @@ MonoBehaviour:
     - Bagdad
     - Mali
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFEn donde estaban los Jardines Colgantes?"
     Respuestas:
     - Grecia
@@ -1691,6 +1723,8 @@ MonoBehaviour:
     - Sumeria
     - Babilonia
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQuien es el dios griego del rayo?"
     Respuestas:
     - "J\xFApiter"
@@ -1698,6 +1732,8 @@ MonoBehaviour:
     - Zeus
     - Thor
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQu\xE9 fruta le dio Eva a Ad\xE1n"
     Respuestas:
     - "Pi\xF1a"
@@ -1705,6 +1741,8 @@ MonoBehaviour:
     - Durazno
     - Manzana
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el punto m\xE1s profundo del planeta?"
     Respuestas:
     - Devil's Kettle
@@ -1712,6 +1750,8 @@ MonoBehaviour:
     - Challenger Deep
     - Tamatea
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   preguntasMedias:
   - Pregunta: "\xBFQu\xE9 tipo de animal marino es la ballena?"
     Respuestas:
@@ -1720,6 +1760,8 @@ MonoBehaviour:
     - Paquidermo
     - Sirenio
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es la cantidad de huesos de una persona adulta?"
     Respuestas:
     - 250 huesos
@@ -1727,6 +1769,8 @@ MonoBehaviour:
     - 203 huesos
     - 206 huesos
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ndo acab\xF3 la segunda guerra mundial?"
     Respuestas:
     - 1945
@@ -1734,6 +1778,8 @@ MonoBehaviour:
     - 1946
     - 1943
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9n es el autor de El Quijote De La Mancha?"
     Respuestas:
     - Francisco de Quevedo
@@ -1741,6 +1787,8 @@ MonoBehaviour:
     - "Bartolom\xE9 de Torres y Naharro"
     - Miguel de Cervantes y Saavedra
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9n pint\xF3 la \xFAltima cena?"
     Respuestas:
     - Michelangelo Buonarroti
@@ -1748,6 +1796,8 @@ MonoBehaviour:
     - Raffaello Sanzio
     - Leonardo da Vinci
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFEn qu\xE9 pa\xEDs se encuentra la Torre de Pisa?"
     Respuestas:
     - Italia
@@ -1755,6 +1805,8 @@ MonoBehaviour:
     - Indonesia
     - India
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFD\xF3nde se encuentra la Catedral de la Sagrada Familia?"
     Respuestas:
     - Barcelona
@@ -1762,6 +1814,8 @@ MonoBehaviour:
     - "Jerusal\xE9n"
     - "Par\xEDs"
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFC\xF3mo se denomina el resultado de la multiplicaci\xF3n?"
     Respuestas:
     - Producto
@@ -1769,6 +1823,8 @@ MonoBehaviour:
     - Multiplicando
     - Total
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCual es la estrella m\xE1s cercana al Sistema Solar?"
     Respuestas:
     - "Pr\xF3xima Centauri"
@@ -1776,6 +1832,8 @@ MonoBehaviour:
     - Polaris
     - Regulus
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFEn cuantas notas se divide la escala m\xFAsical?"
     Respuestas:
     - 8 notas
@@ -1783,6 +1841,8 @@ MonoBehaviour:
     - 32 notas
     - 64 notas
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es la galaxia m\xE1s cercana a la V\xEDa L\xE1ctea?"
     Respuestas:
     - "Galaxia de Andr\xF3meda"
@@ -1790,6 +1850,8 @@ MonoBehaviour:
     - Galaxia del Cigarro
     - Galaxia de Centauro
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCual de los siguientes es hijo de Zeus?"
     Respuestas:
     - Teseo
@@ -1797,6 +1859,8 @@ MonoBehaviour:
     - Perseo
     - Jason
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ntas temporadas tuvo la serie Friends?"
     Respuestas:
     - 7
@@ -1804,6 +1868,8 @@ MonoBehaviour:
     - 9
     - 10
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFA que sinfon\xEDa de Beethoven pertenece el Himno de la Alegr\xEDa?"
     Respuestas:
     - "5\xB0 sinfon\xEDa"
@@ -1811,6 +1877,8 @@ MonoBehaviour:
     - "9\xB0 sinfon\xEDa"
     - "4\xB0 sinfon\xEDa"
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9n escribi\xF3 La Llamada de Cthulhu?"
     Respuestas:
     - H. P. Lovecraft
@@ -1818,6 +1886,8 @@ MonoBehaviour:
     - Clark Ashton Smith
     - Frank Belknap Long
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9n escribi\xF3 El Se\xF1or de los Anillos?"
     Respuestas:
     - George R. R. Martin
@@ -1825,6 +1895,8 @@ MonoBehaviour:
     - C. S. Lewis
     - J. K. Rowling
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCuantas pel\xEDculas hay en la franquicia Star Wars?"
     Respuestas:
     - 3
@@ -1832,6 +1904,8 @@ MonoBehaviour:
     - 9
     - 11
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9n escribi\xF3 El Resplandor?"
     Respuestas:
     - Edgar Allan Poe
@@ -1839,6 +1913,8 @@ MonoBehaviour:
     - Stephen King
     - Terry Pratchett
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9nes libraron la batalla de las Term\xF3pilas?"
     Respuestas:
     - Espartanos y persas
@@ -1846,6 +1922,8 @@ MonoBehaviour:
     - Espartanos y atenienses
     - Itacos y troyanos
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCuanto mide la Gran Piramide de Guiza?"
     Respuestas:
     - 148 metros
@@ -1853,6 +1931,8 @@ MonoBehaviour:
     - 139 metros
     - 150 metros
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   preguntasDificiles:
   - Pregunta: "\xBFAproximadamente, cu\xE1ntos idiomas se hablan en el mundo?"
     Respuestas:
@@ -1861,6 +1941,8 @@ MonoBehaviour:
     - 7000
     - 6500
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFEn qu\xE9 a\xF1o se produjo la conquista normanda de Inglaterra?"
     Respuestas:
     - 1066
@@ -1868,6 +1950,8 @@ MonoBehaviour:
     - 803
     - 1152
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el mito m\xE1s antiguo en la historia de la humanidad?"
     Respuestas:
     - "\xC9pica de Gilgamesh"
@@ -1875,6 +1959,8 @@ MonoBehaviour:
     - La Odisea
     - Las Murallas de Asgard
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ntos grados aproximado hace el camar\xF3n pistola al atacar
       a su presa?"
     Respuestas:
@@ -1883,6 +1969,8 @@ MonoBehaviour:
     - "4000 \xB0C"
     - "5000 \xB0C"
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFDe los hijos de Kronos, cu\xE1l es el menor?"
     Respuestas:
     - Zeus
@@ -1890,6 +1978,8 @@ MonoBehaviour:
     - Poseidon
     - Demeter
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ndo se dise\xF1\xF3 y cre\xF3 el primer computador del mundo?"
     Respuestas:
     - 1943 y 1945
@@ -1897,6 +1987,8 @@ MonoBehaviour:
     - 1930 y 1934
     - 1945 y 1950
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQu\xE9 aporta m\xE1s ox\xEDgeno al planeta?"
     Respuestas:
     - "Los \xE1rboles"
@@ -1904,6 +1996,8 @@ MonoBehaviour:
     - Las plantas
     - Los animales
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ntos elementos forman la tabla peri\xF3dica?"
     Respuestas:
     - 96 elementos
@@ -1911,6 +2005,8 @@ MonoBehaviour:
     - 134 elementos
     - 118 elementos
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ntos dioses Ol\xEDmpicos hay?"
     Respuestas:
     - 10 dioses
@@ -1918,6 +2014,8 @@ MonoBehaviour:
     - 14 dioses
     - 8 dioses
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFEn que a\xF1o se public\xF3 Don Quijote de La Mancha?"
     Respuestas:
     - 1602
@@ -1925,6 +2023,8 @@ MonoBehaviour:
     - 1608
     - 1610
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFEn que a\xF1o se pint\xF3 La creaci\xF3n de Ad\xE1n?"
     Respuestas:
     - 0
@@ -1932,6 +2032,8 @@ MonoBehaviour:
     - 860
     - 1511
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFD\xF3nde se firm\xF3 el primer acta de independencia de Chile?"
     Respuestas:
     - Santiago
@@ -1939,6 +2041,8 @@ MonoBehaviour:
     - Talcahuano
     - Al final de la hoja
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCual es la capital de Bulgaria?"
     Respuestas:
     - Sofia
@@ -1946,6 +2050,8 @@ MonoBehaviour:
     - "Bak\xFA"
     - Budapest
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9n es el autor de los libros de The Witcher?"
     Respuestas:
     - "Ryszard Kapu\u015Bci\u0144ski"
@@ -1953,6 +2059,8 @@ MonoBehaviour:
     - Ignacio Domeyko
     - Olga Tokarczuk
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ntos sistemas solares hay en la V\xEDa L\xE1ctea?"
     Respuestas:
     - 3702
@@ -1960,6 +2068,8 @@ MonoBehaviour:
     - 3916
     - 3604
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el ave terrestre m\xE1s grande?"
     Respuestas:
     - Kiwi
@@ -1967,6 +2077,8 @@ MonoBehaviour:
     - Picozapato
     - Avestruz
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el tipo de ara\xF1a m\xE1s grande?"
     Respuestas:
     - Theraphosa Blondi
@@ -1974,6 +2086,8 @@ MonoBehaviour:
     - Poecilotheria Metallica
     - Grammostola Rosea
     RespuestaCorrecta: 1
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el reptil m\xE1s grande?"
     Respuestas:
     - Geco
@@ -1981,6 +2095,8 @@ MonoBehaviour:
     - Anaconda
     - Iguana
     RespuestaCorrecta: 2
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFQui\xE9n fue el primer emperador romano?"
     Respuestas:
     - Julio Cesar
@@ -1988,6 +2104,8 @@ MonoBehaviour:
     - Augusto
     - "Cal\xEDgula"
     RespuestaCorrecta: 3
+    tieneMedia: 0
+    Media: {fileID: 0}
   - Pregunta: "\xBFCuando se escribi\xF3 la Divina Comedia?"
     Respuestas:
     - 1231
@@ -1995,6 +2113,8 @@ MonoBehaviour:
     - 1123
     - 1321
     RespuestaCorrecta: 4
+    tieneMedia: 0
+    Media: {fileID: 0}
   opciones:
   - {fileID: 1806152510}
   - {fileID: 69280422}
