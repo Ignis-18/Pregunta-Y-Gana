@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Mago
+    uniqueID: 2490550271
+    locked: 0
+  - name: fondo
+    uniqueID: 2082782339
+    locked: 0

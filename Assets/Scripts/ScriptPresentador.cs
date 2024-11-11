@@ -1,72 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ScriptPresentador : MonoBehaviour
 {
-    
     public Pruebas pruebas;
 
-    public Sprite normal;
-    public Sprite nervioso;
-    public Sprite asustado;
-    public Sprite derrotado;
-    public Sprite tf1;
-    public Sprite tf2;
-    
+    private Animator animator;
+
     public int maxCorrecto;
     public int minVida;
 
-
-
     void Start()
     {
+        animator = GetComponent<Animator>(); 
         maxCorrecto = 0;
         minVida = 3;
     }
-    
 
     void Update()
     {
-        if(pruebas.cantidadCorrectas != maxCorrecto)
+        if (pruebas.cantidadCorrectas != maxCorrecto)
         {
             maxCorrecto = pruebas.cantidadCorrectas;
 
-            if(pruebas.cantidadCorrectas >= 0 && pruebas.cantidadCorrectas <= 2)
+            if (pruebas.cantidadCorrectas >= 0 && pruebas.cantidadCorrectas <= 2)
             {
-                GetComponent<Image>().sprite = normal;
+                animator.SetInteger("Estado", 1); // 1 representa "Normal"
             }
-
-            else if(pruebas.cantidadCorrectas >= 3 && pruebas.cantidadCorrectas <= 5)
+            else if (pruebas.cantidadCorrectas >= 3 && pruebas.cantidadCorrectas <= 5)
             {
-                GetComponent<Image>().sprite = nervioso;
+                animator.SetInteger("Estado", 2); // 2 representa "Nervioso"
             }
-
-            else if(pruebas.cantidadCorrectas >= 6 && pruebas.cantidadCorrectas <= 8)
+            else if (pruebas.cantidadCorrectas >= 6 && pruebas.cantidadCorrectas <= 8)
             {
-                GetComponent<Image>().sprite = asustado;
+                animator.SetInteger("Estado", 3); // 3 representa"Asustado"
             }
-
-            else if(pruebas.cantidadCorrectas >= 9)
+            else if (pruebas.cantidadCorrectas >= 9)
             {
-                GetComponent<Image>().sprite = derrotado;
+                animator.SetInteger("Estado", 4); // 4 representa "Derrotado"
             }
         }
 
-        if(pruebas.oportunidades != minVida)
+        if (pruebas.oportunidades != minVida)
         {
             minVida = pruebas.oportunidades;
 
-            if(pruebas.oportunidades == 2)
+            if (pruebas.oportunidades == 2)
             {
-                GetComponent<Image>().sprite = tf1;
+                animator.SetTrigger("TF1"); // Usa un Trigger para animaciones específicas
             }
-
             else if (pruebas.oportunidades == 1)
             {
-                GetComponent<Image>().sprite = tf2;
-            } 
+                animator.SetTrigger("TF2"); // Otro Trigger para esta animación
+            }
         }
     }
+
 }
