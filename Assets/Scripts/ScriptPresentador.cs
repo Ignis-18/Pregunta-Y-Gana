@@ -26,19 +26,19 @@ public class ScriptPresentador : MonoBehaviour
 
             if (pruebas.cantidadCorrectas >= 0 && pruebas.cantidadCorrectas <= 2)
             {
-                animator.SetInteger("Normal", 1); // 1 representa "Normal"
+                animator.SetInteger("StatusWin", 1); // 1 representa "Normal"
             }
             else if (pruebas.cantidadCorrectas >= 3 && pruebas.cantidadCorrectas <= 5)
             {
-                animator.SetInteger("Nervioso", 2); // 2 representa "Nervioso"
+                animator.SetInteger("StatusWin", 2); // 2 representa "Nervioso"
             }
             else if (pruebas.cantidadCorrectas >= 6 && pruebas.cantidadCorrectas <= 8)
             {
-                animator.SetInteger("Asustado", 3); // 3 representa"Asustado"
+                animator.SetInteger("StatusWin", 3); // 3 representa"Asustado"
             }
             else if (pruebas.cantidadCorrectas >= 9)
             {
-                animator.SetInteger("Derrotado", 4); // 4 representa "Derrotado"
+                animator.SetInteger("StatusWin", 4); // 4 representa "Derrotado"
             }
         }
 
