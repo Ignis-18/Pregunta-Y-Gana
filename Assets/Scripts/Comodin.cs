@@ -14,7 +14,16 @@ public class Comodin : MonoBehaviour
 
     void Start()
     {
-        detector = GameObject.FindWithTag("Manager");
+        //detector = GameObject.FindWithTag("Manager");
+        if (!GameObject.FindWithTag("Manager"))
+        {
+            detector = pruebas.refInfo;
+
+        }
+        else
+        {
+            detector = GameObject.FindWithTag("Manager");
+        }
         datos = detector.GetComponent<DoNotDestroyOnLoad>();
     }
     

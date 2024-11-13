@@ -1759,6 +1759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info: {fileID: 0}
+  refInfo: {fileID: 2872821134865407997, guid: c56ee13d000f7914eb6b016c4aa7f2e8, type: 3}
   detecta: {fileID: 0}
   preguntasFaciles:
   - Pregunta: "\xBFCual es el oceano m\xE1s grande?"

@@ -8,6 +8,7 @@ public enum Dificultad{FACIL, INTERMEDIO, DIFICIL}
 public class Pruebas : MonoBehaviour
 {
     public GameObject info;
+    public GameObject refInfo;
     public DoNotDestroyOnLoad detecta;    
     public List<Preguntas> preguntasFaciles;
     public List<Preguntas> preguntasMedias;
@@ -36,7 +37,17 @@ public class Pruebas : MonoBehaviour
 
     private void Start() //Iniciar primera pregunta
     {
-        info = GameObject.FindWithTag("Manager");
+        //info = GameObject.FindWithTag("Manager");
+        if(!GameObject.FindWithTag("Manager"))
+        {
+            info = refInfo;
+            
+        }
+        else
+        {
+            info = GameObject.FindWithTag("Manager");
+        }
+        
         detecta = info.GetComponent<DoNotDestroyOnLoad>();
         
         contadorDificultad = 1;
