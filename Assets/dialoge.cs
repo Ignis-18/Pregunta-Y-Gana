@@ -3,22 +3,27 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class dialoge : MonoBehaviour
 {
     [TextArea(3, 10)]
     public string[] dialogueLines;
     public TextMeshProUGUI dialogueText; // Referencia al componente TextMeshPro
-    private List<string> currentPages; // Lista para guardar las páginas del diálogo actual
-    private int currentPageIndex; // Índice de la página actual
-    private int currentLineIndex = 0;
+    private List<string> currentPages; // Lista para guardar las paginas del dialogo actual
+    public int currentPageIndex; // indice de la pagina actual
+    public int currentLineIndex = 0;
     private bool displayingDialogue = false;
+    public bool activarEscena = false;
 
-    public string nextSceneName; // Nombre de la próxima escena a cargar
+    public string nextSceneName;
+
+    public Slider carga; // Nombre de la proxima escena a cargar
 
     void Start()
     {
         currentPages = new List<string>();
+        StartCoroutine(CargarEscena());
     }
 
     void OnMouseEnter()
@@ -53,8 +58,13 @@ public class dialoge : MonoBehaviour
                 {
                     displayingDialogue = false;
                     dialogueText.text = "";
-                    SceneManager.LoadScene(nextSceneName); // Cargar la próxima escena
+
                 }
+            }
+
+            if (currentPageIndex == 1)
+            {
+                activarEscena = true;
             }
         }
     }
@@ -63,7 +73,7 @@ public class dialoge : MonoBehaviour
     {
         currentPages.Clear();
         currentPageIndex = 0;
-        const int maxCharacters = 200; // Máximo de caracteres por página
+        const int maxCharacters = 200; // Maximo de caracteres por pagina
 
         for (int i = 0; i < dialogue.Length; i += maxCharacters)
         {
@@ -83,5 +93,21 @@ public class dialoge : MonoBehaviour
     {
         displayingDialogue = false;
         dialogueText.text = "";
+    }
+
+    IEnumerator CargarEscena()
+    {
+        AsyncOperation op = SceneManager.LoadSceneAsync("Trivia");
+        op.allowSceneActivation = false;
+
+        while (!op.isDone)
+        {
+            //Debug.Log(op.progress);
+            yield return null;
+            if (activarEscena)
+            {
+                op.allowSceneActivation = true;
+            }
+        }
     }
 }
