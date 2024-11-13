@@ -8,17 +8,27 @@ public class Comodin : MonoBehaviour
     public Pruebas pruebas;
     public Sprite ByN;
     public Sprite color;
+    DoNotDestroyOnLoad datos;
+    GameObject detector;
 
+
+    void Start()
+    {
+        detector = GameObject.FindWithTag("Manager");
+        datos = detector.GetComponent<DoNotDestroyOnLoad>();
+    }
+    
     void Update()
     {
-        if (pruebas.usosComodin<=0)
+        if (pruebas.usosComodin>0 && datos.infinite == true)
         {
-            GetComponent<Image>().sprite = ByN;
+            
+            GetComponent<Image>().sprite = color;
         }
 
         else
         {
-            GetComponent<Image>().sprite = color;
+            GetComponent<Image>().sprite = ByN;
         }
     }
 

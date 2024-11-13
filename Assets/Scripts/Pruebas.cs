@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public enum Dificultad{FACIL, INTERMEDIO, DIFICIL}
 public class Pruebas : MonoBehaviour
 {
+    public GameObject info;
+    public DoNotDestroyOnLoad detecta;    
     public List<Preguntas> preguntasFaciles;
     public List<Preguntas> preguntasMedias;
     public List<Preguntas> preguntasDificiles;
@@ -14,6 +16,7 @@ public class Pruebas : MonoBehaviour
     public GameObject botonComodin;
     public GameObject panelPregunta;
     public GameObject indicadorBonus;
+    public SceneLoaderScript Loader;
     
     public Dificultad _dificultad;
     public int preguntaActual;
@@ -33,11 +36,17 @@ public class Pruebas : MonoBehaviour
 
     private void Start() //Iniciar primera pregunta
     {
+        info = GameObject.FindWithTag("Manager");
+        detecta = info.GetComponent<DoNotDestroyOnLoad>();
+        
         contadorDificultad = 1;
         oportunidades = 3;
         cantidadCorrectas = 0;
         contadorPreguntas = 1;
         usosComodin = 0;
+
+        detecta.win = false;
+        detecta.lose = false;
 
         opciones[0].SetActive(true);
         opciones[1].SetActive(true);
@@ -52,7 +61,7 @@ public class Pruebas : MonoBehaviour
 
     private void Update()
     {
-        if(contadorPreguntas>1 && (contadorPreguntas-1)%3==0)
+        if(contadorPreguntas>1 && (contadorPreguntas-1)%3==0 && detecta.infinite == false)
         {
             bonus = true;
         }
@@ -69,6 +78,22 @@ public class Pruebas : MonoBehaviour
         else
         {
             indicadorBonus.SetActive(false);
+        }
+
+        if (detecta.infinite == false)
+        {
+            if(cantidadCorrectas >= 10 || oportunidades <= 0)
+            {
+                Loader.activarEscena = true;
+            }
+        }
+
+        else
+        {
+            if(preguntasDificiles.Count <= 0 || oportunidades <= 0)
+            {
+                Loader.activarEscena = true;
+            }
         }
     }
 
@@ -107,10 +132,15 @@ public class Pruebas : MonoBehaviour
 
         puntuacion.text = "Puntos: \n"+cantidadCorrectas;
 
-        if(cantidadCorrectas>=10)
+        if(cantidadCorrectas>=10 && detecta.infinite == false)
         {
             Debug.Log("Ganaste");
-            Win();
+            //Win();
+        }
+
+        if(preguntasDificiles.Count <= 0 && detecta.infinite == true)
+        {
+            Debug.Log("Ganaste");
         }
     }
 
@@ -163,7 +193,7 @@ public class Pruebas : MonoBehaviour
         if (oportunidades<=0)
         {
            Debug.Log("Fin del juego");
-           GameOver();
+           //GameOver();
         }
 
         
@@ -226,9 +256,19 @@ public class Pruebas : MonoBehaviour
 
     public void AsignarDificultad() //Asignar valores de dificultad
     {
-        if(contadorDificultad <= 3) _dificultad = Dificultad.FACIL;
-        else if(contadorDificultad <= 6) _dificultad = Dificultad.INTERMEDIO;
-        else _dificultad = Dificultad.DIFICIL;
+        if (detecta.infinite == false)
+        {
+            if(contadorDificultad <= 3) _dificultad = Dificultad.FACIL;
+            else if(contadorDificultad <= 6) _dificultad = Dificultad.INTERMEDIO;
+            else _dificultad = Dificultad.DIFICIL;
+        }
+
+        else
+        {
+            if(preguntasFaciles.Count > 0) _dificultad = Dificultad.FACIL;
+            else if(preguntasFaciles.Count <= 0 && preguntasMedias.Count > 0) _dificultad = Dificultad.INTERMEDIO;
+            else _dificultad = Dificultad.DIFICIL;
+        }
     }
 
     void marcarRespuestas() //Determinar respuesta correcta
@@ -278,7 +318,7 @@ public class Pruebas : MonoBehaviour
 
     public void comodin() //Funciones del comodin
     {
-        if (_dificultad == Dificultad.FACIL && usosComodin>0)
+        if (_dificultad == Dificultad.FACIL && usosComodin>0 && detecta.infinite == false)
         {
             for (int i = 0; i<opciones.Length; i++)
             {
@@ -297,7 +337,7 @@ public class Pruebas : MonoBehaviour
             usosComodin--;
         }
 
-        else if (_dificultad == Dificultad.INTERMEDIO && usosComodin>0)
+        else if (_dificultad == Dificultad.INTERMEDIO && usosComodin>0 && detecta.infinite == false)
         {
             for (int i = 0; i<opciones.Length; i++)
             {
@@ -316,7 +356,7 @@ public class Pruebas : MonoBehaviour
             usosComodin--;
         }
 
-        else if (_dificultad == Dificultad.DIFICIL && usosComodin>0)
+        else if (_dificultad == Dificultad.DIFICIL && usosComodin>0 && detecta.infinite == false)
         {
             for (int i = 0; i<opciones.Length; i++)
             {
