@@ -24,21 +24,20 @@ public class ScriptPresentador : MonoBehaviour
         {
             maxCorrecto = pruebas.cantidadCorrectas;
 
-            if (pruebas.cantidadCorrectas >= 0 && pruebas.cantidadCorrectas <= 2)
+            if (pruebas.cantidadCorrectas >= 0 && pruebas.cantidadCorrectas <= 5)
             {
+                animator.ResetTrigger("TF1");
                 animator.SetInteger("StatusWin", 1); // 1 representa "Normal"
             }
-            else if (pruebas.cantidadCorrectas >= 3 && pruebas.cantidadCorrectas <= 5)
+            else if (pruebas.cantidadCorrectas > 5 && pruebas.cantidadCorrectas <= 8)
             {
-                animator.SetInteger("StatusWin", 2); // 2 representa "Nervioso"
+                animator.ResetTrigger("TF1");
+                animator.SetInteger("StatusWin", 2); // 2 representa "Feliz"
             }
-            else if (pruebas.cantidadCorrectas >= 6 && pruebas.cantidadCorrectas <= 8)
+            else if (pruebas.cantidadCorrectas > 8)
             {
-                animator.SetInteger("StatusWin", 3); // 3 representa"Asustado"
-            }
-            else if (pruebas.cantidadCorrectas >= 9)
-            {
-                animator.SetInteger("StatusWin", 4); // 4 representa "Derrotado"
+                animator.ResetTrigger("TF1");
+                animator.SetInteger("StatusWin", 3); // 3 representa "Entusiasmado"
             }
         }
 
@@ -48,12 +47,9 @@ public class ScriptPresentador : MonoBehaviour
 
             if (pruebas.oportunidades == 2)
             {
-                animator.SetTrigger("TF1"); // Usa un Trigger para animaciones específicas
+                animator.SetTrigger("TF1"); // Representa "Nervioso"
             }
-            else if (pruebas.oportunidades == 1)
-            {
-                animator.SetTrigger("TF2"); // Otro Trigger para esta animación
-            }
+
         }
     }
 
