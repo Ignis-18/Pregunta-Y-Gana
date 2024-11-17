@@ -17,6 +17,7 @@ public class Pruebas : MonoBehaviour
     public GameObject botonComodin;
     public GameObject panelPregunta;
     public GameObject indicadorBonus;
+    public GameObject playButton;
     public SceneLoaderScript Loader;
     
     public Dificultad _dificultad;
@@ -31,6 +32,7 @@ public class Pruebas : MonoBehaviour
     public bool bonus = false;
 
     public bool esCorrecta = false;
+    public bool debug = false;
 
     public Text puntuacion;
     public Text vidas;
@@ -65,6 +67,7 @@ public class Pruebas : MonoBehaviour
         opciones[3].SetActive(true);
         
         generarPreguntas();
+        ActivarBoton();
 
         puntuacion.text = "Puntos: \n"+cantidadCorrectas;
         vidas.text = "Vidas: \n"+oportunidades;
@@ -72,6 +75,11 @@ public class Pruebas : MonoBehaviour
 
     private void Update()
     {
+        if(debug)
+        {
+            ActivarBoton();
+        }
+        
         if(contadorPreguntas>1 && (contadorPreguntas-1)%3==0 && detecta.infinite == false)
         {
             bonus = true;
@@ -110,6 +118,8 @@ public class Pruebas : MonoBehaviour
 
     public void correcto() //Siguiente preguntas en caso de respuesta correcta
     {
+        ActivarBoton();
+        
         Debug.Log(contadorPreguntas);
         
         opciones[0].SetActive(true);
@@ -169,6 +179,8 @@ public class Pruebas : MonoBehaviour
         si es mala
         evaluar dificultad()
         Quitar vida()*/
+
+        ActivarBoton();
         
         opciones[0].SetActive(true);
         opciones[1].SetActive(true);
@@ -402,5 +414,47 @@ public class Pruebas : MonoBehaviour
     public void Win()
     {
         SceneManager.LoadScene("Win");
+    }
+
+    public void ActivarBoton()
+    {
+        if(_dificultad == Dificultad.FACIL)
+        {
+            if(preguntasFaciles[preguntaActual].tieneMedia)
+            {
+                playButton.SetActive(true);
+            }
+
+            else
+            {
+                playButton.SetActive(false);
+            }
+        }
+
+        else if(_dificultad == Dificultad.INTERMEDIO)
+        {
+            if(preguntasMedias[preguntaActual].tieneMedia)
+            {
+                playButton.SetActive(true);
+            }
+
+            else
+            {
+                playButton.SetActive(false);
+            }
+        }
+
+        else if(_dificultad == Dificultad.DIFICIL)
+        {
+            if(preguntasDificiles[preguntaActual].tieneMedia)
+            {
+                playButton.SetActive(true);
+            }
+
+            else
+            {
+                playButton.SetActive(false);
+            }
+        }
     }
 }

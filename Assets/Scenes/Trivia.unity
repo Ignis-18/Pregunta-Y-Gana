@@ -280,8 +280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -137, y: -79.036}
-  m_SizeDelta: {x: 119.75, y: 87.844}
+  m_AnchoredPosition: {x: -137, y: -71.71196}
+  m_SizeDelta: {x: 124.496, y: 91.325}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &109375318
 MonoBehaviour:
@@ -364,6 +364,139 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109375316}
+  m_CullTransparentMesh: 1
+--- !u!1 &175382320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175382321}
+  - component: {fileID: 175382324}
+  - component: {fileID: 175382323}
+  - component: {fileID: 175382322}
+  m_Layer: 5
+  m_Name: PlayMedia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &175382321
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175382320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1476073158}
+  m_Father: {fileID: 1288096005}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 77.82201}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &175382322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175382320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 175382323}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &175382323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175382320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.5, b: 0.017984152, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &175382324
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175382320}
   m_CullTransparentMesh: 1
 --- !u!1 &185299894
 GameObject:
@@ -1622,7 +1755,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1649,6 +1782,7 @@ RectTransform:
   - {fileID: 916735966}
   - {fileID: 1745605612}
   - {fileID: 1727276434}
+  - {fileID: 175382321}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1933,12 +2067,12 @@ MonoBehaviour:
     RespuestaCorrecta: 4
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFCu\xE1l es el punto m\xE1s profundo del planeta?"
+  - Pregunta: "\xBFQui\xE9n fue presidente de Chile durante 1946?"
     Respuestas:
-    - Devil's Kettle
-    - Mauna Kea
-    - Challenger Deep
-    - Tamatea
+    - "Sebasti\xE1n Pi\xF1era Echenique"
+    - "Carlos Iba\xF1ez del Campo"
+    - "Gabriel Gonz\xE1lez Videla"
+    - Arturo Alessandri Palma
     RespuestaCorrecta: 3
     tieneMedia: 0
     Media: {fileID: 0}
@@ -2069,12 +2203,12 @@ MonoBehaviour:
     RespuestaCorrecta: 3
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFQui\xE9n escribi\xF3 La Llamada de Cthulhu?"
+  - Pregunta: "\xBFQui\xE9n escribi\xF3 Cien A\xF1os de Soledad?"
     Respuestas:
-    - H. P. Lovecraft
-    - Robert E. Howard
-    - Clark Ashton Smith
-    - Frank Belknap Long
+    - "Gabriel G\xE1rcia M\xE1rquez"
+    - Mario Vargas Llosa
+    - "Julio Cort\xE1zar"
+    - Jorge Luis Borges
     RespuestaCorrecta: 1
     tieneMedia: 0
     Media: {fileID: 0}
@@ -2133,14 +2267,14 @@ MonoBehaviour:
     RespuestaCorrecta: 3
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFEn qu\xE9 a\xF1o se produjo la conquista normanda de Inglaterra?"
+  - Pregunta: "\xBFQu\xE9 cantante es el interprete de esta canci\xF3n?"
     Respuestas:
-    - 1066
-    - 911
-    - 803
-    - 1152
+    - Fernando Hubiergo
+    - Vicente Fernandez
+    - Frank Sinatra
+    - Gustavo Cerati
     RespuestaCorrecta: 1
-    tieneMedia: 0
+    tieneMedia: 1
     Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el mito m\xE1s antiguo en la historia de la humanidad?"
     Respuestas:
@@ -2161,14 +2295,14 @@ MonoBehaviour:
     RespuestaCorrecta: 4
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFDe los hijos de Kronos, cu\xE1l es el menor?"
+  - Pregunta: "\xBFEn que a\xF1o se lanz\xF3 esta canci\xF3n?"
     Respuestas:
-    - Zeus
-    - Hades
-    - Poseidon
-    - Demeter
+    - 1982
+    - 1974
+    - 1956
+    - 1941
     RespuestaCorrecta: 1
-    tieneMedia: 0
+    tieneMedia: 1
     Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1ndo se dise\xF1\xF3 y cre\xF3 el primer computador del mundo?"
     Respuestas:
@@ -2242,12 +2376,12 @@ MonoBehaviour:
     RespuestaCorrecta: 1
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFQui\xE9n es el autor de los libros de The Witcher?"
+  - Pregunta: "\xBFQui\xE9n escrib\xEDo Papelucho?"
     Respuestas:
-    - "Ryszard Kapu\u015Bci\u0144ski"
-    - Andrzej Sapkowsk
-    - Ignacio Domeyko
-    - Olga Tokarczuk
+    - Alicia Morel
+    - Marcela Paz
+    - Cecilia Beuchat
+    - "Mar\xEDa Luisa Silva"
     RespuestaCorrecta: 2
     tieneMedia: 0
     Media: {fileID: 0}
@@ -2313,6 +2447,7 @@ MonoBehaviour:
   botonComodin: {fileID: 916735965}
   panelPregunta: {fileID: 314889781}
   indicadorBonus: {fileID: 1662019106}
+  playButton: {fileID: 175382320}
   Loader: {fileID: 1532790722}
   _dificultad: 0
   preguntaActual: 0
@@ -2324,6 +2459,7 @@ MonoBehaviour:
   usosComodin: 0
   bonus: 0
   esCorrecta: 0
+  debug: 0
   puntuacion: {fileID: 951009595}
   vidas: {fileID: 1411943835}
 --- !u!4 &1350038444
@@ -2620,6 +2756,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411943833}
+  m_CullTransparentMesh: 1
+--- !u!1 &1476073157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476073158}
+  - component: {fileID: 1476073160}
+  - component: {fileID: 1476073159}
+  m_Layer: 5
+  m_Name: PlaySign
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1476073158
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476073157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 175382321}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1476073159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476073157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4198113, g: 1, b: 0.48122814, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: bbec1f28ca1f6834db8b28bf786f7712, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1476073160
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476073157}
   m_CullTransparentMesh: 1
 --- !u!1 &1532790721
 GameObject:
@@ -2936,8 +3147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -137.00006, y: -176}
-  m_SizeDelta: {x: 119.75, y: 87.844}
+  m_AnchoredPosition: {x: -137.00006, y: -172.519}
+  m_SizeDelta: {x: 124.496, y: 91.325}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1745605613
 MonoBehaviour:
