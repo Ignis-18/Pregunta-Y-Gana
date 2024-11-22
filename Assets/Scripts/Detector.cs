@@ -10,6 +10,7 @@ public class Detector : MonoBehaviour
     public DoNotDestroyOnLoad detecta;
     public Sprite gana;
     public Sprite pierde;
+    public Animator animatorMago;
     
     // Start is called before the first frame update
     void Start()
@@ -20,11 +21,13 @@ public class Detector : MonoBehaviour
         if (detecta.win == true)
         {
             GetComponent<Image>().sprite = gana;
+            animatorMago.SetBool("Won", true);
         }
 
         if (detecta.lose == true)
         {
             GetComponent<Image>().sprite = pierde;
+            animatorMago.SetBool("Won", false);
         }
     }
 }

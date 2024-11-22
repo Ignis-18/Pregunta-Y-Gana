@@ -296,8 +296,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 0}
   detecta: {fileID: 0}
-  gana: {fileID: 21300000, guid: 0ace7286dd1f8524b82568a78c04ef9f, type: 3}
-  pierde: {fileID: 21300000, guid: 050ba9eec7231d24d82d241bcda9a4ab, type: 3}
+  gana: {fileID: 21300000, guid: 43fa5042f4ade314c9b88eabb5ad1c29, type: 3}
+  pierde: {fileID: 21300000, guid: 85027d15b1145dd499cbaff4d5c0bdd4, type: 3}
 --- !u!1 &269443996
 GameObject:
   m_ObjectHideFlags: 0
