@@ -448,13 +448,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1350038443}
+        m_TargetAssemblyTypeName: Pruebas, Assembly-CSharp
+        m_MethodName: ReproducirMusica
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1459,6 +1459,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951009593}
   m_CullTransparentMesh: 1
+--- !u!1 &960218140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960218141}
+  - component: {fileID: 960218142}
+  m_Layer: 5
+  m_Name: QuestionMediaPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &960218141
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960218140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1288096005}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &960218142
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960218140}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1136458463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,13 +1747,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c95571c644c1e1a459075387f7019ac3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1819,6 +1951,7 @@ RectTransform:
   - {fileID: 1745605612}
   - {fileID: 1727276434}
   - {fileID: 175382321}
+  - {fileID: 960218141}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1939,7 +2072,7 @@ MonoBehaviour:
     - "Oc\xE9ano \xCDndico"
     - "Oc\xE9ano \xC1rtico"
     RespuestaCorrecta: 2
-    tieneMedia: 1
+    tieneMedia: 0
     Media: {fileID: 0}
   - Pregunta: "\xBFCu\xE1l es el pa\xEDs m\xE1s grande del mundo?"
     Respuestas:
@@ -2067,15 +2200,15 @@ MonoBehaviour:
     RespuestaCorrecta: 1
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFDonde est\xE1 la Gran Esfinge?"
+  - Pregunta: "\xBFComo se llama esta canci\xF3n de Violeta Parra?"
     Respuestas:
-    - Guiza
-    - Cairo
-    - Bagdad
-    - Mali
-    RespuestaCorrecta: 1
-    tieneMedia: 0
-    Media: {fileID: 0}
+    - Run Run se fue pal norte
+    - La Jardinera
+    - Rin del angelito
+    - Gracias a la vida
+    RespuestaCorrecta: 2
+    tieneMedia: 1
+    Media: {fileID: 8300000, guid: f4092bc88e23d004d983444858fe4a99, type: 3}
   - Pregunta: "\xBFEn donde estaban los Jardines Colgantes?"
     Respuestas:
     - Grecia
@@ -2212,15 +2345,15 @@ MonoBehaviour:
     RespuestaCorrecta: 1
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFCual de los siguientes es hijo de Zeus?"
+  - Pregunta: "\xBFQuien interpreta esta canci\xF3n?"
     Respuestas:
-    - Teseo
-    - Herakles
-    - Perseo
-    - Jason
+    - Arturo Gatica
+    - Lucho Gatica
+    - "Miguel Cal\xF3"
+    - Nelson Riddle
     RespuestaCorrecta: 2
-    tieneMedia: 0
-    Media: {fileID: 0}
+    tieneMedia: 1
+    Media: {fileID: 8300000, guid: 2c11e3c755b3b1a4689f81847393ec69, type: 3}
   - Pregunta: "\xBFCu\xE1ntas temporadas tuvo la serie Friends?"
     Respuestas:
     - 7
@@ -2303,15 +2436,15 @@ MonoBehaviour:
     RespuestaCorrecta: 3
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFQu\xE9 cantante es el interprete de esta canci\xF3n?"
+  - Pregunta: 'Complete la letra:'
     Respuestas:
-    - Fernando Hubiergo
-    - Vicente Fernandez
-    - Frank Sinatra
-    - Gustavo Cerati
-    RespuestaCorrecta: 1
+    - Peleando con entereza
+    - En el rodeo  'e los Andes
+    - Al flaco Loyola
+    - Al guaton Loyola
+    RespuestaCorrecta: 4
     tieneMedia: 1
-    Media: {fileID: 0}
+    Media: {fileID: 8300000, guid: a618109dd6ecc4e4eb77e04a4baca95b, type: 3}
   - Pregunta: "\xBFCu\xE1l es el mito m\xE1s antiguo en la historia de la humanidad?"
     Respuestas:
     - "\xC9pica de Gilgamesh"
@@ -2485,6 +2618,7 @@ MonoBehaviour:
   indicadorBonus: {fileID: 1662019106}
   playButton: {fileID: 175382320}
   Loader: {fileID: 1532790722}
+  musicaPregunta: {fileID: 960218142}
   _dificultad: 0
   preguntaActual: 0
   preguntaTxt: {fileID: 216724665}

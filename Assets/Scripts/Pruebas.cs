@@ -19,6 +19,7 @@ public class Pruebas : MonoBehaviour
     public GameObject indicadorBonus;
     public GameObject playButton;
     public SceneLoaderScript Loader;
+    public AudioSource musicaPregunta;
     
     public Dificultad _dificultad;
     public int preguntaActual;
@@ -67,7 +68,7 @@ public class Pruebas : MonoBehaviour
         opciones[3].SetActive(true);
         
         generarPreguntas();
-        ActivarBoton();
+        //ActivarBoton();
 
         puntuacion.text = "Puntos: \n"+cantidadCorrectas;
         vidas.text = "Vidas: \n"+oportunidades;
@@ -77,7 +78,7 @@ public class Pruebas : MonoBehaviour
     {
         if(debug)
         {
-            ActivarBoton();
+            //ActivarBoton();
         }
         
         if(contadorPreguntas>1 && (contadorPreguntas-1)%3==0 && detecta.infinite == false)
@@ -118,7 +119,7 @@ public class Pruebas : MonoBehaviour
 
     public void correcto() //Siguiente preguntas en caso de respuesta correcta
     {
-        ActivarBoton();
+        //ActivarBoton();
         
         Debug.Log(contadorPreguntas);
         
@@ -180,7 +181,7 @@ public class Pruebas : MonoBehaviour
         evaluar dificultad()
         Quitar vida()*/
 
-        ActivarBoton();
+        //ActivarBoton();
         
         opciones[0].SetActive(true);
         opciones[1].SetActive(true);
@@ -246,6 +247,48 @@ public class Pruebas : MonoBehaviour
                 preguntaTxt.text = preguntasDificiles[preguntaActual].Pregunta;
                 marcarRespuestas();
             break;
+        }
+
+        if (_dificultad == Dificultad.FACIL)
+        {
+            if (preguntasFaciles[preguntaActual].tieneMedia)
+            {
+                playButton.SetActive(true);
+                musicaPregunta.clip = preguntasFaciles[preguntaActual].Media;
+            }
+
+            else
+            {
+                playButton.SetActive(false);
+            }
+        }
+
+        else if (_dificultad == Dificultad.INTERMEDIO)
+        {
+            if (preguntasMedias[preguntaActual].tieneMedia)
+            {
+                playButton.SetActive(true);
+                musicaPregunta.clip = preguntasMedias[preguntaActual].Media;
+            }
+
+            else
+            {
+                playButton.SetActive(false);
+            }
+        }
+
+        else if (_dificultad == Dificultad.DIFICIL)
+        {
+            if (preguntasDificiles[preguntaActual].tieneMedia)
+            {
+                playButton.SetActive(true);
+                musicaPregunta.clip = preguntasDificiles[preguntaActual].Media;
+            }
+
+            else
+            {
+                playButton.SetActive(false);
+            }
         }
 
         /*
@@ -416,13 +459,14 @@ public class Pruebas : MonoBehaviour
         SceneManager.LoadScene("Win");
     }
 
-    public void ActivarBoton()
+    /*public void ActivarBoton()
     {
         if(_dificultad == Dificultad.FACIL)
         {
             if(preguntasFaciles[preguntaActual].tieneMedia)
             {
                 playButton.SetActive(true);
+                musicaPregunta.clip = preguntasFaciles[preguntaActual].Media;
             }
 
             else
@@ -436,6 +480,7 @@ public class Pruebas : MonoBehaviour
             if(preguntasMedias[preguntaActual].tieneMedia)
             {
                 playButton.SetActive(true);
+                musicaPregunta.clip = preguntasMedias[preguntaActual].Media;
             }
 
             else
@@ -449,6 +494,7 @@ public class Pruebas : MonoBehaviour
             if(preguntasDificiles[preguntaActual].tieneMedia)
             {
                 playButton.SetActive(true);
+                musicaPregunta.clip = preguntasDificiles[preguntaActual].Media;
             }
 
             else
@@ -456,5 +502,10 @@ public class Pruebas : MonoBehaviour
                 playButton.SetActive(false);
             }
         }
+    }*/
+
+    public void ReproducirMusica()
+    {
+        musicaPregunta.Play();
     }
 }
