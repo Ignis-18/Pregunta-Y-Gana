@@ -38,5 +38,7 @@ public class ScriptRespuestas : MonoBehaviour
             pruebas.incorrecto();
             incorrecta.Play();
         }
+
+        pruebas.musicaPregunta.Stop();
    }
 }
