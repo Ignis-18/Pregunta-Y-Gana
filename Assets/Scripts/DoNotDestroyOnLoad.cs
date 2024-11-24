@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DoNotDestroyOnLoad : MonoBehaviour
 {
-    GameObject manager;
-    Pruebas pruebas;
+    [SerializeField] GameObject manager;
+    [SerializeField] Pruebas pruebas;
     public bool win = false;
     public bool lose = false;
     public bool infinite = false;

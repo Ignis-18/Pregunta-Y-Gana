@@ -298,6 +298,7 @@ MonoBehaviour:
   detecta: {fileID: 0}
   gana: {fileID: 21300000, guid: 43fa5042f4ade314c9b88eabb5ad1c29, type: 3}
   pierde: {fileID: 21300000, guid: 85027d15b1145dd499cbaff4d5c0bdd4, type: 3}
+  animatorMago: {fileID: 348859637}
 --- !u!1 &269443996
 GameObject:
   m_ObjectHideFlags: 0
