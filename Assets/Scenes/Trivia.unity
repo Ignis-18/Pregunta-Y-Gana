@@ -2318,15 +2318,15 @@ MonoBehaviour:
     RespuestaCorrecta: 1
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFCual es la estrella m\xE1s cercana al Sistema Solar?"
+  - Pregunta: "\xBFCual es el nombre de esta canci\xF3n?"
     Respuestas:
-    - "Pr\xF3xima Centauri"
-    - Sirius
-    - Polaris
-    - Regulus
+    - Entre La Arena Y El Mar
+    - "En Una Tarde De Pasi\xF3n"
+    - "Una Tarde Nada M\xE1s"
+    - El Viento Y El Mar
     RespuestaCorrecta: 1
-    tieneMedia: 0
-    Media: {fileID: 0}
+    tieneMedia: 1
+    Media: {fileID: 8300000, guid: c71edbec51dcecf44ae1e1989465cd98, type: 3}
   - Pregunta: "\xBFEn cuantas notas se divide la escala m\xFAsical?"
     Respuestas:
     - 8 notas
@@ -2336,15 +2336,15 @@ MonoBehaviour:
     RespuestaCorrecta: 4
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFCu\xE1l es la galaxia m\xE1s cercana a la V\xEDa L\xE1ctea?"
+  - Pregunta: "\xBFQuien interpreta esta canci\xF3n?"
     Respuestas:
-    - "Galaxia de Andr\xF3meda"
-    - "Galaxia del Tri\xE1ngulo"
-    - Galaxia del Cigarro
-    - Galaxia de Centauro
+    - Antonio Prieto
+    - Peter Rock
+    - Fernando Hubiergo
+    - Lucho Gatica
     RespuestaCorrecta: 1
-    tieneMedia: 0
-    Media: {fileID: 0}
+    tieneMedia: 1
+    Media: {fileID: 8300000, guid: f36cd222660645342b80a563d733debb, type: 3}
   - Pregunta: "\xBFQuien interpreta esta canci\xF3n?"
     Respuestas:
     - Arturo Gatica
@@ -2363,15 +2363,15 @@ MonoBehaviour:
     RespuestaCorrecta: 4
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFA que sinfon\xEDa de Beethoven pertenece el Himno de la Alegr\xEDa?"
+  - Pregunta: "\xBFQuien interpreta esta canci\xF3n?"
     Respuestas:
-    - "5\xB0 sinfon\xEDa"
-    - "8\xB0 sinfon\xEDa"
-    - "9\xB0 sinfon\xEDa"
-    - "4\xB0 sinfon\xEDa"
+    - "Sinf\xF3nica de Santiago"
+    - Los Jaivas
+    - Orquesta Huambaly
+    - Congreso
     RespuestaCorrecta: 3
-    tieneMedia: 0
-    Media: {fileID: 0}
+    tieneMedia: 1
+    Media: {fileID: 8300000, guid: 5667f623fad9377488766eeced0ef961, type: 3}
   - Pregunta: "\xBFQui\xE9n escribi\xF3 Cien A\xF1os de Soledad?"
     Respuestas:
     - "Gabriel G\xE1rcia M\xE1rquez"
@@ -2390,15 +2390,15 @@ MonoBehaviour:
     RespuestaCorrecta: 2
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFCuantas pel\xEDculas hay en la franquicia Star Wars?"
+  - Pregunta: "\xBFQuien interpreta esta canci\xF3n?"
     Respuestas:
-    - 3
-    - 6
-    - 9
-    - 11
+    - Lucho Gatica
+    - Fernando Hubiergo
+    - Inti-Illimani
+    - Orquesta Huambaly
     RespuestaCorrecta: 4
-    tieneMedia: 0
-    Media: {fileID: 0}
+    tieneMedia: 1
+    Media: {fileID: 8300000, guid: 0af01a3f2f32c3c4bb767f20280d9d34, type: 3}
   - Pregunta: "\xBFQui\xE9n escribi\xF3 El Resplandor?"
     Respuestas:
     - Edgar Allan Poe
@@ -2466,13 +2466,13 @@ MonoBehaviour:
     Media: {fileID: 0}
   - Pregunta: "\xBFEn que a\xF1o se lanz\xF3 esta canci\xF3n?"
     Respuestas:
-    - 1982
-    - 1974
     - 1956
+    - 1965
+    - 1953
     - 1941
     RespuestaCorrecta: 1
     tieneMedia: 1
-    Media: {fileID: 0}
+    Media: {fileID: 8300000, guid: df925ef695026c14087458c3a3ffd51f, type: 3}
   - Pregunta: "\xBFCu\xE1ndo se dise\xF1\xF3 y cre\xF3 el primer computador del mundo?"
     Respuestas:
     - 1943 y 1945
@@ -2554,15 +2554,15 @@ MonoBehaviour:
     RespuestaCorrecta: 2
     tieneMedia: 0
     Media: {fileID: 0}
-  - Pregunta: "\xBFCu\xE1ntos sistemas solares hay en la V\xEDa L\xE1ctea?"
+  - Pregunta: "\xBFQuien interpreta esta canci\xF3n?"
     Respuestas:
-    - 3702
-    - 3805
-    - 3916
-    - 3604
+    - Los Tres
+    - Congreso
+    - Trio Los Peregrinos
+    - Los Jaivas
     RespuestaCorrecta: 3
-    tieneMedia: 0
-    Media: {fileID: 0}
+    tieneMedia: 1
+    Media: {fileID: 8300000, guid: 1caba5dde315e254580a9efd9260a09a, type: 3}
   - Pregunta: "\xBFCu\xE1l es el ave terrestre m\xE1s grande?"
     Respuestas:
     - Kiwi
