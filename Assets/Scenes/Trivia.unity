@@ -2130,7 +2130,7 @@ MonoBehaviour:
     Media: {fileID: 0}
   - Pregunta: "\xBFC\xF3mo se llama este juego?"
     Respuestas:
-    - Pregunta y Gana
+    - Responde y Gana
     - Corre y Gana
     - Acierta y Gana
     - Piensa y Gana
